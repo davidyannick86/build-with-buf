@@ -21,6 +21,7 @@ plugins:
 
 - remote: buf.build/community/neoeinstein-prost-crate:v0.4.1
   out: .
+  strategy: all
   opt:
   - include_file=src/gen/mod.rs
-  - gen_crate
+  - gen_crate=Cargo.toml
